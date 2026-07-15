@@ -39,7 +39,7 @@ of Marginal Gains (AMG).
 
 ## Huddle Cadence
 
-**When:** Tuesdays & Thursdays, 1:00–2:00 PM via Signal
+**When:** Mondays 1:00–2:00 PM via Google Workspace
 **Format:** KPI review → blockers → action items
 **Minutes:** AI-transcribed and summarized post-meeting
 
