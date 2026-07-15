@@ -28,7 +28,7 @@ Design, document, and instrument the operational processes that support Vynues t
 
 | Task | Description | Status |
 |------|-------------|--------|
-| T1 | Define QA standards, acceptance criteria, and defect-severity taxonomy | 🚧 In Progress |
+| T1 | Define QA standards, acceptance criteria, and defect-severity taxonomy | Done |
 | T2 | Map QA workflow to test artifacts and UX heuristics | ⏳ Planned |
 | T3 | Map the venue/vendor supply chain using the SCOR model | ⏳ Planned |
 | T4 | Identify bottlenecks and implement measurable improvements | ⏳ Planned |
