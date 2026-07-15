@@ -23,7 +23,7 @@ PLAN ──► DEVELOP ──► TEST ──► TRIAGE ──► RELEASE ──�
 - Severity floor pre-assigned to story
 
 **Gate — story is NOT sprint-ready until:**
-- [ ] Acceptance criteria written (Given/When/Then)
+- [] Acceptance criteria written (Given/When/Then)
 - [ ] Test skeleton committed to `tests/`
 - [ ] Severity floor assigned (S0/S1/S2/S3)
 - [ ] UX heuristics at risk identified (H1–H14)
