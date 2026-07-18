@@ -1,14 +1,12 @@
 # README — T3 Supply Chain Map (SCOR Model)
 
-Operations Sprint — T3: Venue/Vendor Supply Chain Map
-```
-
 ---
 
 ## 📋 Table of Contents
 
 - [What Is This?](#what-is-this)
 - [Who Is This For?](#who-is-this-for)
+- [Folder Structure](#folder-structure)
 - [The Five SCOR Steps](#the-five-scor-steps)
 - [Glossary](#glossary)
 - [Owners & Contact](#owners--contact)
@@ -34,6 +32,22 @@ PLAN → SOURCE → MAKE → DELIVER → RETURN
 | **Interns / new staff** | Understand how the operation works |
 | **Ops coordinators** | Know which step they own |
 | **Procurement team** | Reference for sourcing and vendor contracts |
+
+---
+
+## Folder Structure
+
+```
+T3-supply-chain-map/
+│
+├── README.md
+│
+├── process-model/
+│
+├── scor-model/
+│
+└── supply-chain/
+```
 
 ---
 
@@ -66,7 +80,7 @@ PLAN → SOURCE → MAKE → DELIVER → RETURN
 
 - Run-of-show document is created
 - Vendors are briefed with logistics
-- Site is everything confirmed?
+- Site walkthrough and final confirmations are completed
 
 ---
 
@@ -112,12 +126,3 @@ PLAN → SOURCE → MAKE → DELIVER → RETURN
 | **Procurement Lead** | SOURCE step |
 | **Ops Coordinator Lead** | MAKE and DELIVER steps |
 | **Client Success Lead** | RETURN step |
-
----
-
-```
-─────────────────────────────────────────────────────
-  Vynues Operations Sprint  |  T3  |  Supply Chain
-  Framework: SCOR (Plan / Source / Make / Deliver / Return)
-─────────────────────────────────────────────────────
-```
