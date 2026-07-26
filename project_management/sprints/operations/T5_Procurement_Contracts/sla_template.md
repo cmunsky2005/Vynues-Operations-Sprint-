@@ -181,15 +181,3 @@ Date: ________________________________
 
 ---
 
-### Contract law concepts incorporated
-
-This SLA naturally incorporates several of the contract concepts from your scope:
-
-* **Offer and Acceptance** — Both parties agree by signing the SLA.
-* **Meeting of the Minds** — The SLA clearly defines shared performance expectations.
-* **Consideration** — The SLA supports the exchange established in the Procurement Contract.
-* **Substantial Performance** — Performance is measured through the service standards and KPIs.
-* **Material Breach** — Repeated failure to meet service levels can trigger remedies under the Procurement Contract.
-* **Integration Clause** — Part 11 states that the SLA and Procurement Contract together represent the complete agreement regarding service performance.
-
-This keeps the legal principles at an appropriate internship level while focusing the SLA on its primary purpose: **measuring and managing vendor performance**.
