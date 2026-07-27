@@ -25,7 +25,7 @@ PLAN ──► DEVELOP ──► TEST ──► TRIAGE ──► RELEASE ──�
 **Gate — story is NOT sprint-ready until:**
 - [] Acceptance criteria written (Given/When/Then)
 - [ ] Test skeleton committed to `tests/`
-- [ ] Severity floor assigned (S0/S1/S2/S3)
+- [ ] Severity floor assigned (S1/S2/S3/S4)
 - [ ] UX heuristics at risk identified (H1–H14)
 
 **Owner:** Product Owner + QA Lead
@@ -37,7 +37,7 @@ WHEN   [action taken]
 THEN   [observable, measurable outcome]
 AND    [additional assertions]
 
-Severity floor:        S0 / S1 / S2 / S3
+Severity floor:        S1 / S2 / S3 / S4
 UX heuristic(s):       H#
 Test artifact(s):      tests/path/to/file
 ```
@@ -124,10 +124,10 @@ See `ux_heuristics.md` for full H1–H14 audit framework.
 
 | Severity | Action | SLA |
 |---|---|---|
-| S0 — Critical | Halt release. Page on-call. War room. | Fix within 4 hours |
-| S1 — High | Block current story. Fix within sprint. | Fix within 24 hours |
-| S2 — Medium | Backlog with priority tag. | Fix within 2 sprints |
-| S3 — Low | Backlog. | Fix at discretion |
+| S1— Critical | Halt release. Page on-call. War room. | Fix within 4 hours |
+| S2 — High | Block current story. Fix within sprint. | Fix within 24 hours |
+| S3 — Medium | Backlog with priority tag. | Fix within 2 sprints |
+| S4 — Low | Backlog. | Fix at discretion |
 
 **Required for every defect before fix is merged:**
 - Regression test committed to `tests/regression/DEF-[NNNN]_<desc>.spec`
