@@ -75,5 +75,5 @@ The **LIBRARY** folder contains the reference materials provided for the Operati
 - Procurement Contract Reference
 - Strategies for Two-Sided Networks
 - Value Chain
+- SCOR Model
 
-These resources were used to support the development of the deliverables contained in this repository.
