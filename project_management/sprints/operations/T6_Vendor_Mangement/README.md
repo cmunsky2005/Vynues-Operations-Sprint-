@@ -8,13 +8,11 @@
 
 This folder contains the standardized vendor management documentation developed as part of **Task 6 (T6)** of the Operations Sprint. These documents establish consistent procedures for onboarding vendors, evaluating vendor performance, and managing vendor risk throughout the procurement lifecycle.
 
-Together, these processes support stronger vendor relationships, improve operational reliability, reduce procurement risk, and promote continuous improvement across Vynues' supply chain.
 
 ---
 
 # Folder Structure
 
-```text
 T6_Vendor_Management/
 │
 ├── README.md                         ← You are here
@@ -37,7 +35,6 @@ Defines the standardized process for evaluating, approving, and onboarding new v
 
 Provides a standardized framework for evaluating vendor performance after each project or service engagement. Vendors are assessed using weighted performance categories such as quality, delivery, communication, SLA compliance, professionalism, customer satisfaction, and documentation accuracy.
 
-Performance results support future procurement decisions, corrective actions, and continuous improvement initiatives.
 
 ---
 
@@ -91,18 +88,6 @@ Continuous Improvement
 | **UCC Article 2** | Supports procurement contracts and vendor obligations |
 | **Procurement Best Practices** | Standardizes vendor evaluation, monitoring, and performance management |
 
----
-
-# Key Vendor Management Processes
-
-- Standardized vendor onboarding
-- Vendor qualification and approval
-- Vendor documentation verification
-- Vendor performance evaluation
-- Vendor risk assessment
-- Continuous vendor monitoring
-- Corrective action planning
-- Procurement decision support
 
 ---
 
