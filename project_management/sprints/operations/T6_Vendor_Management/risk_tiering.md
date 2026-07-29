@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The **Vendor Risk-Tiering Process** provides a standardized method for identifying, evaluating, and managing vendor risk throughout the procurement lifecycle. By assigning vendors to risk tiers, Vynues can determine the appropriate level of oversight, reduce operational disruptions, and support informed procurement decisions.
+The **Vendor Risk-Tiering Process** is for identifying, evaluating, and managing vendor risk throughout the procurement lifecycle. By assigning vendors to risk tiers, Vynues can determine the appropriate level of oversight, reduce operational disruptions, and support informed procurement decisions.
 
 ---
 
