@@ -1,22 +1,19 @@
 # Baseline Metrics
 
-**Version:** 1.0
-
-**Owner:** Operations Team
-
-**Approver:** COO
-
-**Standards:** ISO 9001:2015 • Lean Six Sigma • SCOR Model
-
+**Sprint:** Operations Sprint — Process KPIs (T7)  
+**Version:** 1.0  
+**Owner:** Operations Team  
+**Approver:** Chief Operating Officer (COO)  
+**Standards:** ISO 9001:2015 • Lean Six Sigma • SCOR Model  
 **Review Cadence:** Quarterly
 
 ---
 
 # Purpose
 
-Baseline Metrics establish the current performance of Vynues' operational processes before process improvements are implemented. These measurements provide a reference point for evaluating the effectiveness of Quality Assurance, Supply Chain, Procurement, and Vendor Management initiatives.
+Baseline Metrics establish the initial performance measurements for Vynues' operational processes before process improvements are implemented. These measurements provide a reference point for evaluating the effectiveness of Quality Assurance, Supply Chain, Procurement, Vendor Management, and Continuous Improvement initiatives.
 
-Without baseline measurements, improvements cannot be accurately measured or validated.
+Baseline measurements should be established using operational data collected from Vynues' business processes.
 
 ---
 
@@ -26,10 +23,10 @@ The objectives of the Baseline Metrics are to:
 
 - Establish current operational performance.
 - Measure process efficiency before improvements.
-- Support KPI development.
+- Support Key Performance Indicator (KPI) development.
 - Identify performance gaps.
 - Enable before-and-after process comparisons.
-- Support ISO 9001 continual improvement activities.
+- Support continual improvement activities.
 
 ---
 
@@ -37,61 +34,51 @@ The objectives of the Baseline Metrics are to:
 
 ## Quality Assurance
 
-| Metric | Baseline Measurement |
-|---------|---------------------|
-| Defect Resolution Time | 18 Hours |
-| First Pass Acceptance Rate | 88% |
-| Documentation Accuracy | 92% |
-| QA Review Completion | 90% |
+| Metric | Baseline |
+|---------|----------|
+| Defect Resolution Time | To Be Established |
+| First Pass Acceptance Rate | To Be Established |
+| Documentation Accuracy | To Be Established |
+| QA Review Completion Rate | To Be Established |
 
 ---
 
 ## Procurement
 
-| Metric | Baseline Measurement |
-|---------|---------------------|
-| Procurement Cycle Time | 7 Business Days |
-| Contract Approval Rate | 89% |
-| Purchase Order Accuracy | 94% |
-| Procurement Rework Rate | 12% |
+| Metric | Baseline |
+|---------|----------|
+| Procurement Cycle Time | To Be Established |
+| Contract Approval Rate | To Be Established |
+| Purchase Order Accuracy | To Be Established |
+| Procurement Rework Rate | To Be Established |
 
 ---
 
 ## Vendor Management
 
-| Metric | Baseline Measurement |
-|---------|---------------------|
-| Vendor Onboarding Time | 10 Business Days |
-| Vendor Documentation Completion | 90% |
-| Vendor Performance Score | 3.9 / 5 |
-| Vendor SLA Compliance | 91% |
+| Metric | Baseline |
+|---------|----------|
+| Vendor Onboarding Cycle Time | To Be Established |
+| Vendor Documentation Completion Rate | To Be Established |
+| Vendor Performance Score | To Be Established |
+| SLA Compliance Rate | To Be Established |
 
 ---
 
 ## Supply Chain
 
-| Metric | Baseline Measurement |
-|---------|---------------------|
-| On-Time Delivery | 92% |
-| Process Cycle Time | 8 Days |
-| Process Bottlenecks Identified | 3 |
-| Workflow Completion Rate | 90% |
-
----
-
-## Customer Experience
-
-| Metric | Baseline Measurement |
-|---------|---------------------|
-| Customer Satisfaction | 4.2 / 5 |
-| Complaint Resolution Time | 3 Business Days |
-| Repeat Customer Rate | 81% |
+| Metric | Baseline |
+|---------|----------|
+| On-Time Delivery Rate | To Be Established |
+| Process Cycle Time | To Be Established |
+| Process Bottlenecks Identified | To Be Established |
+| Workflow Completion Rate | To Be Established |
 
 ---
 
 # Baseline Collection Process
 
-## Step 1
+### Step 1
 
 Collect operational data from:
 
@@ -99,48 +86,63 @@ Collect operational data from:
 - Procurement Records
 - Vendor Scorecards
 - Vendor Risk Assessments
-- Customer Surveys
-- SLA Reports
+- Supply Chain Performance Reports
+- Service Level Agreement (SLA) Reports
 
 ---
 
-## Step 2
+### Step 2
 
-Validate collected information for accuracy.
-
----
-
-## Step 3
-
-Calculate baseline measurements.
+Validate collected information for accuracy and completeness.
 
 ---
 
-## Step 4
+### Step 3
 
-Document baseline results before implementing improvements.
+Calculate baseline measurements for each KPI.
+
+---
+
+### Step 4
+
+Document baseline results before implementing process improvements.
 
 ---
 
 # Importance of Baseline Metrics
 
-Baseline metrics allow Vynues to:
+Baseline Metrics enable Vynues to:
 
-- Measure improvement over time.
+- Measure operational improvements over time.
 - Compare actual performance against KPI targets.
 - Identify operational trends.
 - Support data-driven decision making.
-- Demonstrate continual improvement under ISO 9001.
+- Support continual improvement.
 
 ---
 
 # Related Documents
 
-- QA Standards
+- QA Standards (T1)
 - Acceptance Criteria
-- QA Workflow
-- Vendor Onboarding
-- Vendor Risk-Tiering
-- Vendor Performance Scorecard
-- Procurement Contract
-- Service Level Agreement
+- QA Workflow (T2)
+- Supply Chain Map (T3)
+- Bottleneck Analysis (T4)
+- Procurement Contracts (T5)
+- Vendor Onboarding Process (T6)
+- Key Performance Indicators (T7)
+- KPI Dashboard (T7)
+- Continuous Improvement Process (T8)
+
+---
+
+# Document Control
+
+| Field | Value |
+|------|-------|
+| Version | 1.0 |
+| Owner | Operations Team |
+| Approver | Chief Operating Officer (COO) |
+| Review Cadence | Quarterly |
+| Sprint | Operations Sprint – Process KPIs (T7) |
+| Standards | ISO 9001:2015 • Lean Six Sigma • SCOR Model |
