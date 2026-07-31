@@ -1,167 +1,291 @@
+# UX Heuristic Audit Framework
 
-# UX Heuristic Audit Framework — Vynues
-
-## Overview
-
-14 heuristics: Nielsen's original 10 (H1–H10) plus 4 Vynues
-event-platform extensions (H11–H14). Each heuristic has:
-- A plain-language definition
-- A Vynues-specific application
-- The audit question(s) to ask
-- The test artifact it maps to
-- The defect severity floor if violated
+**Sprint:** Operations Sprint — Quality Assurance, Supply Chains & Procurement  
+**Owner:** QA Lead / Operations Sprint Team  
+**Standards:** Nielsen's 10 Usability Heuristics • ISO 9001:2015 • Vynues QA Framework  
+**Review Cadence:** Per Sprint
 
 ---
 
-## Heuristic Reference Table
+# Purpose
 
-| # | Name | Severity Floor if Violated |
-|---|---|---|
-| H1 | Visibility of system status | S1 |
-| H2 | Match between system and real world | S2 |
-| H3 | User control and freedom | S1 |
-| H4 | Consistency and standards | S2 |
-| H5 | Error prevention | S1 |
-| H6 | Recognition over recall | S2 |
-| H7 | Flexibility and efficiency of use | S3 |
-| H8 | Aesthetic and minimalist design | S3 |
-| H9 | Help users recognize, diagnose, recover from errors | S1 |
-| H10 | Help and documentation | S3 |
-| H11 | Trust and transparency *(ext.)* | S1 |
-| H12 | Time sensitivity *(ext.)* | S1 |
-| H13 | Multi-stakeholder clarity *(ext.)* | S2 |
-| H14 | Regulatory and compliance visibility *(ext.)* | S0 |
+The UX Heuristic Audit Framework provides a standardized method for evaluating the usability of the Vynues platform. The framework supports the QA Workflow (T2), Acceptance Criteria, Defect Management Process, and Continuous Improvement Process by identifying usability issues before release or vendor/client delivery.
+
+Each heuristic includes:
+
+- Definition
+- Vynues application
+- Audit questions
+- Related QA activities
+- Defect severity classification
 
 ---
 
-## H1 — Visibility of System Status
+# Heuristic Reference Table
 
-**Definition:** The system always keeps users informed about
-what is going on, through appropriate feedback within
-reasonable time.
-
-**Vynues application:** Booking and payment processing states
-must be visible in real time. Users must never be unsure
-whether a booking was confirmed or a payment was submitted.
-
-**Audit questions:**
-- Does every async action (search, booking, payment) show
-  a loading / processing indicator?
-- Is the final state (confirmed / failed / pending) clearly
-  communicated?
-- Are booking confirmation details immediately visible
-  and retrievable?
-
-**Test artifact:** `tests/e2e/flows/payment_checkout_flow.spec`
-· `tests/e2e/flows/vendor_booking_flow.spec`
-
-**Severity floor if violated:** S1
+| ID | Heuristic | Defect Severity |
+|----|-----------|-----------------|
+| H1 | Visibility of System Status | S1 |
+| H2 | Match Between System and the Real World | S2 |
+| H3 | User Control and Freedom | S1 |
+| H4 | Consistency and Standards | S2 |
+| H5 | Error Prevention | S1 |
+| H6 | Recognition Rather Than Recall | S2 |
+| H7 | Flexibility and Efficiency of Use | S3 |
+| H8 | Aesthetic and Minimalist Design | S3 |
+| H9 | Help Users Recognize, Diagnose, and Recover from Errors | S1 |
+| H10 | Help and Documentation | S3 |
 
 ---
 
-## H2 — Match Between System and Real World
+# H1 – Visibility of System Status
 
-**Definition:** The system speaks the users' language, using
-words, phrases, and concepts familiar to the user.
+**Definition**
 
-**Vynues application:** Event-industry vocabulary must be used
-throughout: headcount, run-of-show, F&B minimum, hold,
-tentative, confirmed, room flip, setup/breakdown window.
+The system should always keep users informed about what is happening through timely and appropriate feedback.
 
-**Audit questions:**
-- Are technical or internal terms exposed to end users?
-- Does the venue/vendor search use industry-standard
-  category names?
-- Are date/time formats appropriate for the user's locale?
+**Vynues Application**
 
-**Test artifact:** `tests/ux/heuristic_audits/H2_language_match.md`
+Users should receive clear updates during searches, bookings, payments, and vendor communications.
 
-**Severity floor if violated:** S2
+**Audit Questions**
 
----
+- Is system status clearly displayed?
+- Are users informed when actions are processing?
+- Is the final status communicated clearly?
 
-## H3 — User Control and Freedom
+**Related QA Activities**
 
-**Definition:** Users often choose system functions by mistake
-and need a clearly marked "emergency exit."
+- QA Workflow
+- QA Checklist
+- Acceptance Criteria
 
-**Vynues application:** Cancel / back must be available at every
-step of the booking wizard. Users must be able to exit any
-flow without completing it and without data loss.
-
-**Audit questions:**
-- Is there a visible back/cancel option at every wizard step?
-- Does canceling a booking mid-flow warn the user of
-  any fee implications before confirming?
-- Is unsaved work (event draft) preserved on accidental exit?
-
-**Test artifact:** `tests/e2e/flows/event_creation_flow.spec`
-· `tests/ux/heuristic_audits/H3_user_control.md`
-
-**Severity floor if violated:** S1
+**Defect Severity:** **S1**
 
 ---
 
-## H4 — Consistency and Standards
+# H2 – Match Between System and the Real World
 
-**Definition:** Users should not have to wonder whether
-different words, situations, or actions mean the same thing.
+**Definition**
 
-**Vynues application:** The vendor portal must match main app
-conventions. Design system components must be used
-consistently. "Book," "Reserve," and "Hold" must have
-consistent, defined meanings platform-wide.
+The platform should use language, terminology, and concepts familiar to users.
 
-**Audit questions:**
-- Are the same actions labeled the same way across
-  all surfaces?
-- Does the vendor-facing portal use the same design
-  system as the planner-facing app?
-- Are status labels (Confirmed / Tentative / Cancelled)
-  used identically everywhere?
+**Vynues Application**
 
-**Test artifact:** `tests/e2e/flows/vendor_onboarding_flow.spec`
-· `tests/ux/heuristic_audits/H4_consistency.md`
+Use event planning terminology that vendors, venues, and customers understand.
 
-**Severity floor if violated:** S2
+**Audit Questions**
 
----
+- Is terminology clear and consistent?
+- Are dates, times, and pricing easy to understand?
+- Are event planning terms used appropriately?
 
-## H5 — Error Prevention
+**Related QA Activities**
 
-**Definition:** Even better than good error messages is a
-careful design that prevents a problem from occurring.
+- QA Workflow
+- QA Checklist
 
-**Vynues application:** Form validation before submission.
-Double-confirm on cancellations with fees. Card details
-validated client-side before API call. Date conflicts
-flagged before booking is attempted.
-
-**Audit questions:**
-- Are required fields validated before form submission?
-- Is the user warned before any irreversible action
-  (cancellation with fee, permanent delete)?
-- Are date/time conflicts detected before the user
-  reaches the payment step?
-
-**Test artifact:** `tests/e2e/flows/payment_checkout_flow.spec`
-· `tests/ux/heuristic_audits/H5_error_prevention.md`
-
-**Severity floor if violated:** S1
+**Defect Severity:** **S2**
 
 ---
 
-## H6 — Recognition Over Recall
+# H3 – User Control and Freedom
 
-**Definition:** Minimize the user's memory load by making
-objects, actions, and options visible.
+**Definition**
 
-**Vynues application:** Venue and vendor cards show images,
-ratings, capacity, and key attributes — users never need to
-remember a code or ID. Saved searches and recent events
-are surfaced automatically.
+Users should be able to cancel, undo, or exit actions without unnecessary difficulty.
 
-**Audit questions:**
-- Can users identify a venue/vendor from its card
+**Vynues Application**
 
+Users should be able to cancel bookings, return to previous steps, and recover without losing important information.
+
+**Audit Questions**
+
+- Can users return to previous steps?
+- Are cancellation options available?
+- Is important information preserved?
+
+**Related QA Activities**
+
+- QA Workflow
+- QA Checklist
+
+**Defect Severity:** **S1**
+
+---
+
+# H4 – Consistency and Standards
+
+**Definition**
+
+The platform should present consistent terminology, navigation, and interface elements.
+
+**Vynues Application**
+
+Vendor, customer, and administrative interfaces should use consistent labels and workflows.
+
+**Audit Questions**
+
+- Are labels used consistently?
+- Is navigation consistent?
+- Are status indicators standardized?
+
+**Related QA Activities**
+
+- QA Workflow
+- QA Checklist
+
+**Defect Severity:** **S2**
+
+---
+
+# H5 – Error Prevention
+
+**Definition**
+
+The system should prevent errors whenever possible.
+
+**Vynues Application**
+
+Validate required fields, prevent duplicate bookings, and identify scheduling conflicts before submission.
+
+**Audit Questions**
+
+- Are required fields validated?
+- Are users warned before irreversible actions?
+- Are scheduling conflicts identified?
+
+**Related QA Activities**
+
+- QA Workflow
+- Defect Management Process
+
+**Defect Severity:** **S1**
+
+---
+
+# H6 – Recognition Rather Than Recall
+
+**Definition**
+
+Users should not have to remember information from one screen to another.
+
+**Vynues Application**
+
+Display important venue, vendor, and booking information throughout the workflow.
+
+**Audit Questions**
+
+- Is key information visible?
+- Are recent selections available?
+- Can users easily recognize available options?
+
+**Related QA Activities**
+
+- QA Workflow
+- QA Checklist
+
+**Defect Severity:** **S2**
+
+---
+
+# H7 – Flexibility and Efficiency of Use
+
+**Definition**
+
+The platform should support both new and experienced users.
+
+**Audit Questions**
+
+- Can experienced users complete tasks efficiently?
+- Are workflows simple and intuitive?
+
+**Related QA Activities**
+
+- QA Workflow
+
+**Defect Severity:** **S3**
+
+---
+
+# H8 – Aesthetic and Minimalist Design
+
+**Definition**
+
+Interfaces should display only the information necessary to complete each task.
+
+**Audit Questions**
+
+- Is unnecessary information removed?
+- Is the interface visually organized?
+
+**Related QA Activities**
+
+- QA Workflow
+
+**Defect Severity:** **S3**
+
+---
+
+# H9 – Help Users Recognize, Diagnose, and Recover from Errors
+
+**Definition**
+
+Error messages should clearly explain the problem and how to resolve it.
+
+**Audit Questions**
+
+- Are error messages clear?
+- Do messages explain how to correct the issue?
+
+**Related QA Activities**
+
+- Defect Management Process
+- QA Checklist
+
+**Defect Severity:** **S1**
+
+---
+
+# H10 – Help and Documentation
+
+**Definition**
+
+Helpful documentation should be available whenever users need assistance.
+
+**Audit Questions**
+
+- Is support documentation available?
+- Are instructions easy to understand?
+
+**Related QA Activities**
+
+- QA Workflow
+- Acceptance Criteria
+
+**Defect Severity:** **S3**
+
+---
+
+# Related Documents
+
+- QA Standards (T1)
+- Acceptance Criteria
+- QA Workflow (T2)
+- QA Checklist
+- Defect Severity Taxonomy
+- Defect Management Process
+- KPI Dashboard (T7)
+- Continuous Improvement Process (T8)
+
+---
+
+# Document Control
+
+| Field | Value |
+|------|-------|
+| Version | 1.0 |
+| Owner | QA Lead / Operations Sprint Team |
+| Review Cadence | Per Sprint |
+| Sprint | Operations Sprint |
 
