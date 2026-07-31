@@ -27,17 +27,13 @@ This document applies to:
 
 A deliverable is considered **Done** only when all applicable acceptance criteria have been satisfied.
 
-## 2.1 Software Deliverables
-
-- [ ] All required unit and integration tests pass
-- [ ] No open Severity 1 (S1) or Severity 2 (S2) defects remain
-- [ ] Code has been reviewed and approved
-- [ ] Acceptance criteria have been verified
-- [ ] QA Workflow requirements (T2) have been completed
-- [ ] Performance requirements have been met
-- [ ] Required documentation has been updated
-- [ ] Sprint Lead approval has been obtained
-
+## 2.1 Operational Deliverables
+- [ ]Process documentation is complete.
+- [ ] All required templates have been completed.
+- [ ] Required approvals have been obtained.
+- [ ] Documentation has been reviewed for accuracy.
+- [ ] Related sprint deliverables have been updated.
+- [ ] Sprint Lead approval has been obtained.
 ---
 
 ## 2.2 Venue & Vendor Deliverables
