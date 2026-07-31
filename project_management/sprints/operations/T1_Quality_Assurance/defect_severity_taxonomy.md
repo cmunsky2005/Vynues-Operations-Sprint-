@@ -9,7 +9,7 @@
 
 # 1. Purpose
 
-The Defect Severity Taxonomy provides a standardized method for classifying defects identified throughout Vynues' operational processes. Consistent classification ensures defects are prioritized appropriately, assigned to the correct owner, and resolved according to their operational impact.
+The Defect Severity Taxonomy provides a standardized method for classifying operational defects identified throughout Vynues' quality management system. Consistent classification ensures defects are prioritized, assigned, corrected, and verified according to their impact on vendor management, procurement, supply chain operations, and service delivery.
 
 This taxonomy applies to defects identified in:
 
