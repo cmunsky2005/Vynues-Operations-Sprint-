@@ -1,14 +1,32 @@
 # Operations Runbooks
 
-## Purpose
-
-Operations Runbooks document standardized procedures for recurring operational workflows to improve reliability, consistency, and efficiency across Vynues.
+**Sprint:** Operations Sprint — Quality Assurance, Supply Chains & Procurement  
+**Owner:** COO / Operations Team  
+**Review Cadence:** Quarterly
 
 ---
 
-## Critical Operational Workflows
+# Purpose
 
-The following workflows require documented runbooks:
+Operations Runbooks provide standardized procedures for recurring operational workflows to improve consistency, reliability, and efficiency across Vynues. Standardized procedures support quality assurance, reduce operational errors, and promote continuous improvement.
+
+---
+
+# Scope
+
+Runbooks apply to recurring operational activities involving:
+
+- Vendor onboarding
+- Procurement
+- Supply chain operations
+- Quality assurance
+- Vendor performance management
+
+---
+
+# Operational Runbooks
+
+The following operational processes should maintain documented runbooks:
 
 - Vendor Onboarding
 - Procurement Approval
@@ -18,21 +36,52 @@ The following workflows require documented runbooks:
 
 ---
 
-## Standard Runbook Structure
+# Standard Runbook Format
 
-Each runbook should include:
+Each runbook should include the following sections:
 
-1. Objective
-2. Trigger
-3. Process Owner
-4. Required Inputs
-5. Step-by-Step Procedure
-6. Expected Outputs
-7. Escalation Requirements
-8. Success Criteria
+| Section | Description |
+|---------|-------------|
+| Objective | Purpose of the process |
+| Trigger | Event that starts the process |
+| Process Owner | Individual or team responsible |
+| Required Inputs | Documents or information needed |
+| Procedure | Step-by-step operational process |
+| Expected Outputs | Expected result of the process |
+| Escalation Requirements | When the issue should be escalated |
+| Success Criteria | Indicators of successful completion |
 
 ---
 
-## Expected Outcome
+# Runbook Review
 
-Documented procedures reduce operational variability, improve execution consistency, and support reliable service delivery.
+Runbooks should be reviewed to:
+
+- Verify procedures remain accurate.
+- Incorporate process improvements.
+- Update operational documentation.
+- Support continuous improvement activities.
+
+Review results should be incorporated into the Continuous Improvement Process (T8).
+
+---
+
+# Related Documents
+
+- QA Standards (T1)
+- QA Workflow (T2)
+- Vendor Onboarding (T6)
+- KPI Dashboard (T7)
+- Escalation Paths
+- Continuous Improvement Process
+
+---
+
+# Document Control
+
+| Field | Value |
+|------|-------|
+| Version | 1.0 |
+| Owner | COO / Operations Team |
+| Review Cadence | Quarterly |
+| Sprint | Operations Sprint |
