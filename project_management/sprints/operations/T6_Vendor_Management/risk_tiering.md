@@ -1,162 +1,86 @@
-# Vendor Risk-Tiering Process
+# Vendor Risk Assessment Process
 
-## Purpose
+**Sprint:** Operations Sprint — Vendor Management (T6)  
+**Version:** 1.0  
+**Owner:** Operations Team  
+**Standards:** ISO 9001:2015 • SCOR Model • ISO 28000 • Procurement Best Practices
 
-The **Vendor Risk-Tiering Process** is for identifying, evaluating, and managing vendor risk throughout the procurement lifecycle. By assigning vendors to risk tiers, Vynues can determine the appropriate level of oversight, reduce operational disruptions, and support informed procurement decisions.
+---
+
+# Purpose
+
+The Vendor Risk Assessment Process establishes a consistent approach for identifying, evaluating, monitoring, and managing risks associated with vendors throughout the procurement process. Effective risk management supports reliable operations, procurement activities, and supply chain performance.
 
 ---
 
 # Objectives
 
-The objectives of the Vendor Risk-Tiering Process are to:
+The objectives of the Vendor Risk Assessment Process are to:
 
-- Identify potential risks associated with vendors.
-- Classify vendors based on their level of operational risk.
-- Improve procurement decision-making.
+- Identify vendor-related risks.
+- Evaluate operational risks associated with vendors.
+- Support procurement decision-making.
 - Reduce supply chain disruptions.
-- Support continuous monitoring and risk mitigation.
-- Promote consistent vendor management across all departments.
+- Monitor vendor performance.
+- Support continual improvement.
 
 ---
 
-# Risk Assessment Workflow
+# Vendor Risk Assessment Process
 
-## Step 1: Vendor Information Review
+## Step 1 – Collect Vendor Information
 
-The Operations Team collects and reviews information about the vendor before assigning a risk tier.
+Relevant vendor information should be collected before procurement decisions are made.
 
-### Information Reviewed
+Examples include:
 
-- Business profile
+- Vendor information
 - Products or services provided
-- Years in business
-- Financial information
-- Insurance documentation
-- Regulatory certifications
-- Previous performance (if applicable)
-
-**Outcome:** Vendor information is collected for evaluation.
+- Required documentation
+- Contract information
+- Regulatory information
 
 ---
 
-## Step 2: Risk Evaluation
+## Step 2 – Evaluate Risk
 
-The vendor is evaluated using standardized risk categories.
+Vendor information should be reviewed to identify potential operational risks.
 
-### Risk Categories
+Examples include:
 
-| Risk Category | Description |
-|--------------|-------------|
-| **Financial Stability** | Ability to remain financially stable throughout the contract period. |
-| **Service Reliability** | Ability to consistently deliver products or services as agreed. |
-| **Delivery Performance** | History of meeting delivery schedules and deadlines. |
-| **Contract Compliance** | Ability to comply with Procurement Contracts and Service Level Agreements (SLAs). |
-| **Insurance Coverage** | Verification that required insurance policies remain active and sufficient. |
-| **Regulatory Compliance** | Compliance with applicable laws, regulations, and industry standards. |
-| **Business Reputation** | Overall reputation based on references, previous projects, and customer feedback. |
-
-Each category should be evaluated as:
-
-- Low Risk
-- Medium Risk
-- High Risk
-
-**Outcome:** Individual risk ratings are assigned.
+- Operational risk
+- Supply chain risk
+- Contract compliance
+- Service reliability
+- Regulatory compliance
 
 ---
 
-## Step 3: Vendor Risk Classification
+## Step 3 – Determine Risk
 
-Based on the evaluation, vendors are assigned one of three risk tiers.
-
-### Tier 1 — Low Risk
-
-**Characteristics**
-
-- Strong financial stability
-- Reliable delivery performance
-- Meets contractual obligations
-- Complies with all applicable regulations
-- Maintains required insurance
-- Positive business reputation
-
-**Management Approach**
-
-- Annual performance review
-- Standard operational monitoring
-- Eligible for future procurement opportunities
+The Operations Team documents the results of the assessment and identifies any risks requiring additional monitoring or corrective action.
 
 ---
 
-### Tier 2 — Medium Risk
+## Step 4 – Risk Mitigation
 
-**Characteristics**
+When risks are identified, appropriate mitigation activities should be implemented to reduce operational impact.
 
-- Minor performance concerns
-- Occasional delivery delays
-- Documentation requires updates
-- Limited performance history
-- Moderate operational risk
+Examples include:
 
-**Management Approach**
-
-- Quarterly performance reviews
-- Increased communication with the vendor
-- Corrective action plans when necessary
-- Follow-up evaluations after improvements are completed
+- Additional monitoring
+- Corrective actions
+- Documentation updates
+- Procurement review
+- Vendor communication
 
 ---
 
-### Tier 3 — High Risk
+## Step 5 – Monitor and Review
 
-**Characteristics**
+Vendor performance and identified risks should be monitored and reviewed to determine whether additional actions are required.
 
-- Frequent delivery issues
-- Failure to meet SLA requirements
-- Financial concerns
-- Regulatory or compliance issues
-- Poor service quality
-- Repeated contract violations
-
-**Management Approach**
-
-- Executive approval required before future work
-- Immediate corrective action plan
-- Monthly performance reviews
-- Possible suspension or removal from approved vendors
-
----
-
-## Step 4: Risk Mitigation
-
-For vendors assigned to Tier 2 or Tier 3, the Operations Team develops a mitigation plan.
-
-### Possible Mitigation Actions
-
-- Increase communication with the vendor.
-- Require additional documentation.
-- Conduct more frequent performance reviews.
-- Develop a corrective action plan.
-- Provide additional training or clarification of expectations.
-- Suspend vendor participation if performance does not improve.
-
-**Outcome:** Vendor risk is monitored and managed throughout the business relationship.
-
----
-
-## Step 5: Continuous Review
-
-Vendor risk should be reviewed regularly to ensure classifications remain accurate.
-
-Recommended review schedule:
-
-| Risk Tier | Review Frequency |
-|-----------|------------------|
-| **Tier 1** | Annually |
-| **Tier 2** | Quarterly |
-| **Tier 3** | Monthly |
-
-Risk classifications may change based on vendor performance, compliance, or operational needs.
+Results should be incorporated into the Continuous Improvement Process.
 
 ---
 
@@ -164,29 +88,39 @@ Risk classifications may change based on vendor performance, compliance, or oper
 
 | Role | Responsibility |
 |------|----------------|
-| **Operations Team** | Conducts vendor risk assessments and recommends risk tiers. |
-| **Procurement Team** | Uses risk classifications during vendor selection and contract decisions. |
-| **Operations Manager** | Reviews high-risk vendors and approves mitigation strategies. |
-| **Vendor** | Provides accurate documentation and addresses identified risks. |
+| Operations Team | Conduct vendor risk assessments and document findings. |
+| Procurement Team | Use assessment results during procurement activities. |
+| Management | Review identified operational risks and support corrective actions. |
+| Vendor | Provide requested documentation and cooperate during the assessment process. |
 
 ---
 
-# Expected Benefits
+# Expected Outcomes
 
-Implementing a standardized Vendor Risk-Tiering Process provides the following benefits:
+The Vendor Risk Assessment Process supports:
 
-- Improved vendor selection
+- Improved procurement decisions
 - Reduced operational risk
-- Better procurement decisions
-- Increased supply chain reliability
-- More consistent vendor oversight
-- Stronger compliance with procurement requirements
+- Improved supply chain performance
+- Better vendor management
+- Support for continual improvement
 
 ---
 
-# Standards
+# Related Documents
 
-This process supports the following standards and best practices:
+- Procurement Contracts (T5)
+- Vendor Onboarding Process (T6)
+- Vendor Performance Scorecard (T6)
+- Key Performance Indicators (T7)
+- Continuous Improvement Process (T8)
 
-- **ISO 9001** — Standardized processes and continuous improvement
-- **ISO 28000** — Supply chain security and risk management
+---
+
+# Document Control
+
+| Field | Value |
+|------|-------|
+| Version | 1.0 |
+| Owner | Operations Team |
+| Sprint | Operations Sprint – Vendor Management (T6) |
