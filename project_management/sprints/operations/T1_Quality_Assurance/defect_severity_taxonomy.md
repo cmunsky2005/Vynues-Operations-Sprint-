@@ -1,43 +1,118 @@
+# Defect Severity Taxonomy
 
-# Defect Severity Taxonomy — Vynues
-**Standard:** ISO 9001:2015 Clause 8.7 | VMS QA | Lean Six Sigma
-**Owner:** COO
+**Sprint:** Operations Sprint — Quality Assurance, Supply Chains & Procurement  
+**Owner:** COO / Operations Team  
+**Standard:** Vynues QA Framework  
 **Review Cadence:** Quarterly
 
 ---
 
-## 1. Purpose
+# 1. Purpose
 
-This taxonomy classifies all defects discovered across Vynues 
-product and service delivery into four severity levels (S1–S4), 
-with defined response times, owners, and resolution paths.
+The Defect Severity Taxonomy provides a standardized method for classifying defects identified throughout Vynues' operational processes. Consistent classification ensures defects are prioritized appropriately, assigned to the correct owner, and resolved according to their operational impact.
 
-Aligned to VMS principle:
-> "Identify and correct quality defects as early as possible 
->  in the process."
+This taxonomy applies to defects identified in:
 
----
-
-## 2. Defect Classification Matrix
-
-### S1 — Critical (System Down / Client Impact)
-
-| Field | Definition |
-|---|---|
-| **Impact** | Complete system failure OR client-facing data loss OR security breach OR contractual breach |
-| **Examples** | Platform down; booking data corrupted; payment failure; PII exposed; S1 SLA breach |
-| **Detection Target** | < 1 hour from occurrence |
-| **Response SLA** | Immediate — COO notified within 15 minutes |
-| **Resolution SLA** | < 4 hours |
-| **Owner** | COO + Lead Engineer |
-| **Gate** | Hard gate — zero S1s released to production |
-| **Process** | Detect → Escalate to COO → War room → Fix → Re-test → Post-mortem within 24 hrs |
+- Vendor onboarding
+- Supply chain operations
+- Procurement documentation
+- Contracts and Service Level Agreements (SLAs)
+- Operational processes
+- Quality assurance activities
 
 ---
 
-### S2 — High (Major Function Broken / Degraded)
+# 2. Defect Severity Levels
 
-| Field | Definition |
-|---|---|
-| **Impact** | Core feature broken with no workaround OR significant client experience degradation |
-| **Examples** | Venue search
+## S1 — Critical
+
+| Field | Description |
+|--------|-------------|
+| **Impact** | Critical operational failure that prevents business operations or significantly affects customers or vendors. |
+| **Examples** | Missing vendor for a scheduled event, major procurement failure, missing signed contract before service delivery, complete breakdown of a critical operational process. |
+| **Priority** | Immediate |
+| **Owner** | COO / Operations Lead |
+| **Required Action** | Immediate investigation, corrective action, verification, and escalation. |
+
+---
+
+## S2 — High
+
+| Field | Description |
+|--------|-------------|
+| **Impact** | Significant operational issue that disrupts business activities but has an available workaround. |
+| **Examples** | Incomplete vendor onboarding documentation, delayed contract approvals, vendor scorecard inaccuracies, SLA compliance issues. |
+| **Priority** | High |
+| **Owner** | Operations Team |
+| **Required Action** | Correct as soon as possible and verify before process completion. |
+
+---
+
+## S3 — Medium
+
+| Field | Description |
+|--------|-------------|
+| **Impact** | Moderate issue with limited impact on operations that does not prevent completion of the process. |
+| **Examples** | Minor documentation errors, incomplete internal records, delayed KPI updates, formatting inconsistencies. |
+| **Priority** | Medium |
+| **Owner** | Process Owner |
+| **Required Action** | Correct during the normal review cycle. |
+
+---
+
+## S4 — Low
+
+| Field | Description |
+|--------|-------------|
+| **Impact** | Minor issue with little or no operational impact. |
+| **Examples** | Typographical errors, formatting inconsistencies, outdated document references, minor administrative corrections. |
+| **Priority** | Low |
+| **Owner** | Document Owner |
+| **Required Action** | Correct during the next scheduled document review. |
+
+---
+
+# 3. Defect Management
+
+After a defect is classified, it follows the Vynues Defect Management Process:
+
+```text
+Defect Identified
+        ↓
+Defect Logged
+        ↓
+Severity Assigned
+        ↓
+Owner Assigned
+        ↓
+Corrective Action
+        ↓
+Verification
+        ↓
+Defect Closed
+```
+
+---
+
+# 4. Review
+
+Defect trends should be reviewed regularly to:
+
+- Identify recurring operational issues.
+- Improve vendor management processes.
+- Strengthen procurement procedures.
+- Improve supply chain performance.
+- Support continuous improvement initiatives.
+
+Performance trends should be monitored through the KPI Dashboard (T7) and incorporated into the Continuous Improvement Process (T8).
+
+---
+
+# 5. Document Control
+
+| Field | Value |
+|-------|-------|
+| **Version** | 1.0 |
+| **Owner** | COO / Operations Team |
+| **Review Cadence** | Quarterly |
+| **Sprint** | Operations Sprint |
