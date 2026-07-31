@@ -1,167 +1,182 @@
+# QA Standards
 
-# QA Standards — Vynues
-**Standard:** ISO 9001:2015 | VMS Framework
-**Owner:** COO
-**Review Cadence:** Monthly (Continuous Improvement)
-
----
-
-## 1. Purpose & Scope
-
-This document defines the Quality Assurance (QA) standards governing 
-all Vynues product and service delivery — software releases, venue/vendor 
-recommendations, event bookings, and client-facing outputs.
-
-QA at Vynues is not an end-of-line check. It is embedded at every stage 
-of production using the VMS principle:
-
-> "Energy put in early in the process pays off tenfold. 
->  Energy put in at the end pays off negative tenfold."
+**Sprint:** Operations Sprint — Quality Assurance, Supply Chains & Procurement  
+**Standards:** ISO 9001:2015 • UCC Article 2 • VMS Framework  
+**Owner:** COO  
+**Review Cadence:** Monthly
 
 ---
 
-## 2. QA Philosophy — VMS First Principles
+# 1. Purpose & Scope
 
-### 2.1 Eliminate DOWNTIME
-Every QA decision is evaluated against the eight wastes:
+The QA Standards establish a consistent quality management framework for Vynues' operational processes. These standards ensure quality throughout vendor management, procurement, supply chain operations, contracts, and client-facing deliverables.
+
+Quality assurance is integrated throughout the operational workflow to reduce errors, improve efficiency, and support continuous improvement.
+
+This standard applies to:
+
+- Vendor onboarding
+- Procurement processes
+- Supply chain operations
+- Contracts and Service Level Agreements (SLAs)
+- Venue and vendor recommendations
+- Sprint deliverables
+
+---
+
+# 2. Quality Management Principles
+
+## 2.1 Eliminate DOWNTIME
+
+Quality activities should minimize waste throughout the operational process.
 
 | Waste | Vynues Application |
-|---|---|
-| **D**efects | Bugs, wrong venue matches, failed bookings |
-| **O**verproduction | Features built before validated demand |
-| **W**aiting | Vendor response delays, approval bottlenecks |
-| **N**ot Utilizing Talent | QA handled only by seniors; no skills matrix use |
-| **T**ransportation Waste | Unnecessary data handoffs between systems |
-| **I**nventory Waste | Backlog items never actioned |
-| **M**otion Waste | Redundant clicks, manual data entry |
-| **E**xtra Processing | Reports no one reads; duplicate approvals |
-
-### 2.2 Aggregation of Marginal Gains
-QA improvement is not one large fix. It is 1% improvements across every 
-measurable component of delivery — compounded daily.
-
-> "The holy grail of habit change is not a single 1% improvement, 
->  but a thousand of them."
-
-### 2.3 Before → Action → After
-Every QA intervention is structured as:
-- **Before:** Document the current defect state (screenshots, logs, metrics)
-- **Action:** Apply the fix, process change, or control
-- **After:** Measure the result. Did it move toward zero defects?
+|--------|--------------------|
+| Defects | Incorrect vendor information, incomplete contracts, inaccurate documentation |
+| Overproduction | Unnecessary documentation or duplicate approvals |
+| Waiting | Vendor approval delays, procurement bottlenecks |
+| Not Utilizing Talent | Inefficient assignment of operational responsibilities |
+| Transportation | Unnecessary movement of documents between departments |
+| Inventory | Vendor applications awaiting review |
+| Motion | Repetitive manual data entry |
+| Extra Processing | Duplicate reviews and unnecessary approvals |
 
 ---
 
-## 3. ISO 9001:2015 Alignment
+## 2.2 Aggregation of Marginal Gains
 
-### Clause Mapping
-
-| ISO 9001:2015 Clause | Vynues QA Implementation |
-|---|---|
-| **4.1** — Context | VMS 7S alignment; internal/external issues mapped |
-| **4.4** — QMS Processes | QA workflow mapped in T2_QA_Workflow |
-| **5.1** — Leadership | COO owns QA; sprint leads own task QA |
-| **6.1** — Risk & Opportunity | Defect taxonomy (S1–S4); risk-tiering in T6 |
-| **7.1** — Resources | Capabilities Matrix; skills mapped to QA roles |
-| **7.2** — Competence | Training cadence; VMS Training framework |
-| **7.5** — Documented Info | All QA docs version-controlled in GitHub |
-| **8.1** — Operational Planning | Acceptance criteria per sprint output |
-| **8.5** — Production Control | Receiving, in-process, and final inspection |
-| **8.7** — Nonconforming Output | Defect management process (see file) |
-| **9.1** — Monitoring & Measurement | KPI dashboard (T7); huddle review cycle |
-| **10.2** — Nonconformity & CA | Root cause → corrective action → re-test |
-| **10.3** — Continual Improvement | AMG; continuous improvement plan (T8) |
+Operational quality improves through continuous, incremental improvements across every process rather than one large change.
 
 ---
 
-## 4. Three-Stage Inspection Model
+## 2.3 Before → Action → After
 
-### Stage 1 — Receiving Inspection (Input Gate)
-**When:** Before any vendor, data, or component enters the workflow
-**What is checked:**
-- Vendor credentials and onboarding score (T6)
-- Data completeness and format validation
-- API contract compliance
-- Venue/vendor information accuracy
+Each process improvement should follow a consistent improvement cycle.
 
-**Gate decision:** Accept | Conditional Accept | Reject
+**Before**
+- Document the current process.
+- Identify quality issues or bottlenecks.
 
----
+**Action**
+- Implement corrective actions or process improvements.
 
-### Stage 2 — In-Process Inspection (Production Confirmation)
-**When:** At defined checkpoints during sprint execution
-**What is checked:**
-- Unit tests passing (assertions, mocks)
-- Feature behavior matches acceptance criteria
-- UX heuristics compliance (T2)
-- SCOR process milestones hit (T3)
-
-**Gate decision:** Continue | Rework | Escalate
+**After**
+- Measure performance using established KPIs.
+- Document results for future operational reviews.
 
 ---
 
-### Stage 3 — Final Inspection (Output Gate)
-**When:** Before any output is delivered to a client or pushed to production
-**What is checked:**
-- All acceptance criteria met (see acceptance_criteria.md)
-- S1 and S2 defects: zero open
-- Performance benchmarks met (load, latency, uptime)
-- Legal/contractual compliance (SLA, EULA, ToS — T5)
-- Client-facing content reviewed
+# 3. ISO 9001 Alignment
 
-**Gate decision:** Release | Hold | Reject
+| ISO 9001 Clause | Vynues Implementation |
+|-----------------|----------------------|
+| 4.4 – Quality Management System | QA Workflow (T2) |
+| 5.1 – Leadership | COO responsible for operational quality |
+| 6.1 – Risk-Based Thinking | Vendor Risk Tiering (T6) |
+| 7.5 – Documented Information | Version-controlled operational documentation |
+| 8.1 – Operational Planning | Acceptance Criteria |
+| 8.5 – Operational Control | Procurement, vendor onboarding, and quality inspections |
+| 8.7 – Control of Nonconforming Outputs | Defect Management Process |
+| 9.1 – Performance Evaluation | KPI Dashboard (T7) |
+| 10.2 – Corrective Action | Root cause analysis and corrective actions |
+| 10.3 – Continual Improvement | Continuous Improvement Process (T8) |
 
 ---
 
-## 5. QA Roles & Responsibilities
+# 4. Quality Control Process
+
+## Stage 1 — Receiving Review
+
+Verify:
+
+- Vendor onboarding requirements
+- Procurement documentation
+- Required approvals
+- Vendor information accuracy
+
+**Decision:** Accept • Conditional Acceptance • Reject
+
+---
+
+## Stage 2 — Process Review
+
+Verify:
+
+- Procurement activities follow documented procedures
+- Vendor onboarding requirements are completed
+- Supply chain activities follow the documented workflow (T3)
+- Operational documentation is accurate and complete
+
+**Decision:** Continue • Correct • Escalate
+
+---
+
+## Stage 3 — Final Review
+
+Verify:
+
+- Acceptance Criteria have been satisfied
+- Required documentation is complete
+- Procurement contracts and SLAs have been approved
+- KPI documentation has been updated
+- Sprint deliverables are complete
+
+**Decision:** Approve • Hold • Return for Correction
+
+---
+
+# 5. Roles & Responsibilities
 
 | Role | Responsibility |
-|---|---|
-| **COO** | QA standard owner; escalation for S1 defects |
-| **Sprint Lead** | Acceptance criteria sign-off per sprint |
-| **QA Engineer** | Test execution; defect logging; in-process checks |
-| **Developer** | Unit tests; code review; defect remediation |
-| **Vendor Manager** | Receiving inspection for all vendor inputs (T6) |
-| **All Team Members** | Report defects immediately; no defect suppression |
-
-**Capabilities Matrix:** Skills mapped quarterly against QA role requirements.
+|------|----------------|
+| COO | Owns QA Standards and approves major quality improvements |
+| Sprint Lead | Reviews and approves sprint deliverables |
+| Operations Team | Performs operational quality reviews |
+| Procurement Team | Reviews procurement documentation |
+| Vendor Manager | Verifies vendor onboarding and vendor documentation |
+| All Team Members | Report quality issues and support corrective actions |
 
 ---
 
-## 6. QA KPIs (Instrumented in T7)
+# 6. Quality Performance Indicators
 
-| KPI | Definition | Target |
-|---|---|---|
-| Defect Rate | Defects per sprint / total outputs | < 2% |
-| Defect Escape Rate | Defects found post-release / total defects | < 5% |
-| S1 Defects in Production | Critical defects reaching clients | 0 |
-| Test Coverage | % of code covered by unit tests | ≥ 80% |
-| Mean Time to Detect (MTTD) | Avg time from defect creation to detection | < 24 hrs |
-| Mean Time to Resolve (MTTR) | Avg time from detection to verified fix | S1 < 4 hrs |
-| QA Cycle Time | Time from test start to release sign-off | Baselined T7 |
+Quality performance is monitored through the KPI Dashboard (T7).
 
-**Review cadence:** Every Tuesday & Thursday huddle (1–2 PM, Signal)
-
----
-
-## 7. Continuous Improvement
-
-- **Monthly:** QA standards reviewed for AMG opportunities
-- **Quarterly:** Full ISO 9001 internal audit against this standard
-- **Per Sprint:** Before/after metrics logged in T4
-- **Annually:** External QA audit target (ISO 9001 certification path)
-
-> "Be more concerned with your current trajectory than your current results."
+| KPI | Purpose |
+|------|----------|
+| Vendor Onboarding Cycle Time | Measure onboarding efficiency |
+| Documentation Completion Rate | Ensure complete documentation |
+| Vendor Approval Rate | Measure procurement effectiveness |
+| Vendor Performance Score | Evaluate vendor quality |
+| SLA Compliance | Monitor contractual performance |
+| Documentation Accuracy | Measure documentation quality |
+| High-Risk Vendor Percentage | Monitor operational risk |
+| Corrective Action Completion Rate | Measure effectiveness of corrective actions |
 
 ---
 
-## 8. Document Control
+# 7. Continuous Improvement
+
+Quality performance is reviewed throughout each sprint.
+
+Continuous improvement activities include:
+
+- Review KPI trends (T7)
+- Evaluate bottleneck improvements (T4)
+- Review vendor performance (T6)
+- Update procurement processes (T5)
+- Update operational runbooks and review cadence (T8)
+
+Lessons learned should be incorporated into future operational improvements.
+
+---
+
+# 8. Document Control
 
 | Field | Value |
-|---|---|
+|------|-------|
 | Version | 1.0 |
-| Created | 2025 |
-| Owner | COO, Vynues |
+| Owner | COO |
 | Review Cycle | Monthly |
-| Location | `T1_Quality_Assurance/qa_standards.md` |
-| Standard | ISO 9001:2015 |
-
+| Location | T1_Quality_Assurance/qa_standards.md |
+| Related Documents | Acceptance Criteria, Defect Management Process, Defect Severity Taxonomy, QA Workflow, KPI Dashboard |
