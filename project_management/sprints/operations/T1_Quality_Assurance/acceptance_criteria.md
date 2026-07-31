@@ -1,138 +1,167 @@
+# Acceptance Criteria
 
-# Acceptance Criteria — Vynues
-**Standard:** ISO 9001:2015 Clause 8.1, 8.5 | VMS QA Framework
-**Owner:** COO / Sprint Lead
+**Sprint:** Operations Sprint — Quality Assurance, Supply Chains & Procurement  
+**Owner:** COO / Sprint Lead  
+**Standard:** Vynues QA Framework  
 **Review Cadence:** Per Sprint
 
 ---
 
-## 1. Purpose
+# 1. Purpose
 
-Acceptance criteria define the explicit, measurable conditions that 
-any Vynues output must satisfy before it is considered "done" and 
-approved for delivery or production release.
+Acceptance criteria define the measurable conditions that every Vynues deliverable must satisfy before it is considered complete and approved for release, implementation, or operational use.
 
-**No output is released without sign-off against these criteria.**
+No deliverable may be released until all applicable acceptance criteria have been verified and approved.
 
-This applies to:
+This document applies to:
+
 - Software features and releases
-- Venue/vendor recommendations
-- Client-facing documents (contracts, SLAs, EULAs)
-- Operational process outputs
+- Venue and vendor recommendations
+- Procurement contracts and Service Level Agreements (SLAs)
+- Operational processes
 - Sprint deliverables
 
 ---
 
-## 2. Definition of Done (DoD)
+# 2. Definition of Done (DoD)
 
-An output is **Done** when ALL of the following are true:
+A deliverable is considered **Done** only when all applicable acceptance criteria have been satisfied.
 
-### 2.1 Software Output
-- [ ] All unit tests pass (≥ 80% coverage)
-- [ ] No S1 or S2 open defects
-- [ ] Code reviewed by ≥ 1 peer
-- [ ] Acceptance criteria for the feature verified by QA Engineer
-- [ ] UX heuristics checklist passed (T2)
-- [ ] Performance benchmarks met (latency, uptime, load)
-- [ ] Security review completed (no critical vulnerabilities)
-- [ ] Documentation updated
-- [ ] Sprint lead sign-off obtained
+## 2.1 Software Deliverables
 
-### 2.2 Venue / Vendor Recommendation Output
-- [ ] Vendor passed receiving inspection (T6 scorecard)
-- [ ] Venue data complete and verified (location, capacity, pricing)
-- [ ] Match algorithm output reviewed for accuracy
-- [ ] Client requirements mapped 1:1 to recommendation
-- [ ] SLA terms confirmed with vendor (T5)
-- [ ] Booking confirmation received and logged
-
-### 2.3 Document / Contract Output
-- [ ] Legal review completed (UCC Art. 2 / applicable law)
-- [ ] All required fields populated (no blanks)
-- [ ] SLA and remedy clauses present and enforceable
-- [ ] Digital signature obtained (DocuSign or equivalent)
-- [ ] Filed in version control with date stamp
-- [ ] Counterparty copy delivered
-
-### 2.4 Sprint / Operational Output
-- [ ] All task deliverables present and complete
-- [ ] KPIs measured and logged (T7)
-- [ ] Before/after metrics documented (T4)
-- [ ] Retrospective findings logged for T8
-- [ ] COO or designated lead sign-off
+- [ ] All required unit and integration tests pass
+- [ ] No open Severity 1 (S1) or Severity 2 (S2) defects remain
+- [ ] Code has been reviewed and approved
+- [ ] Acceptance criteria have been verified
+- [ ] QA Workflow requirements (T2) have been completed
+- [ ] Performance requirements have been met
+- [ ] Required documentation has been updated
+- [ ] Sprint Lead approval has been obtained
 
 ---
 
-## 3. Acceptance Criteria by Sprint Task
+## 2.2 Venue & Vendor Deliverables
 
-### T1 — Quality Assurance
-| Criterion | Pass Condition |
-|---|---|
-| QA standards documented | File exists, reviewed, and adopted |
-| Acceptance criteria defined | This document approved and in use |
-| Defect process operational | Owner assigned, S1–S4 taxonomy active |
-| KPIs baselined | Dashboard live in T7 |
-| Zero S1 defects in production | Confirmed via defect log |
-
-### T2 — QA Workflow
-| Criterion | Pass Condition |
-|---|---|
-| Workflow mapped to tests/ | All test artifacts linked to workflow stages |
-| UX heuristics checklist live | Checklist in use for every UI release |
-| QA checklist adopted | Teams using checklist for every output |
-
-### T3 — Supply Chain
-| Criterion | Pass Condition |
-|---|---|
-| SCOR model complete | All 5 domains mapped with owners |
-| Process owners assigned | Every node has a named owner |
-| SLAs defined | Each supply chain link has an SLA |
-
-### T5 — Procurement Contracts
-| Criterion | Pass Condition |
-|---|---|
-| Contract template complete | All required clauses present |
-| SLA framework active | SLAs enforceable and measurable |
-| B2B agreements ≥ 6 | Signed and filed (KR6) |
-| B2C agreements > 30 | Signed and filed (KR7) |
+- [ ] Vendor successfully completes the onboarding process (T6)
+- [ ] Venue and vendor information is complete and verified
+- [ ] Client requirements are accurately matched
+- [ ] Applicable Service Level Agreements (SLAs) are confirmed
+- [ ] Booking information has been verified and recorded
 
 ---
 
-## 4. Gate Decisions
+## 2.3 Procurement Documents
+
+- [ ] Required contract information has been completed
+- [ ] SLA requirements are included
+- [ ] Required approvals have been obtained
+- [ ] Digital signatures have been completed
+- [ ] Final documents have been stored in the appropriate repository
+
+---
+
+## 2.4 Operational Deliverables
+
+- [ ] All required sprint deliverables are complete
+- [ ] KPI measurements have been updated (T7)
+- [ ] Process improvements have been documented (T4)
+- [ ] Continuous improvement recommendations have been recorded (T8)
+- [ ] Sprint Lead approval has been obtained
+
+---
+
+# 3. Acceptance Criteria by Sprint Task
+
+## T1 — Quality Assurance
+
+| Criterion | Pass Condition |
+|-----------|----------------|
+| QA standards documented | Documentation completed and approved |
+| Acceptance criteria established | This document completed and in use |
+| Defect Management Process implemented | Process documented and operational |
+| Defect Severity Taxonomy implemented | Severity levels used consistently |
+| KPIs established | KPI Dashboard available (T7) |
+
+---
+
+## T2 — QA Workflow
+
+| Criterion | Pass Condition |
+|-----------|----------------|
+| QA workflow documented | Workflow completed |
+| QA activities mapped to testing | Testing activities documented |
+| QA checklist implemented | Checklist used during reviews |
+
+---
+
+## T3 — Supply Chain
+
+| Criterion | Pass Condition |
+|-----------|----------------|
+| SCOR model completed | Plan, Source, Make, Deliver, and Return documented |
+| Process owners identified | Owner assigned for each phase |
+| Supply chain documentation completed | Documentation approved |
+
+---
+
+## T4 — Bottleneck Improvement
+
+| Criterion | Pass Condition |
+|-----------|----------------|
+| Bottleneck identified | Current process documented |
+| Improvement developed | Future process documented |
+| Before and after comparison completed | Metrics documented |
+
+---
+
+## T5 — Procurement Contracts
+
+| Criterion | Pass Condition |
+|-----------|----------------|
+| Procurement contract completed | Template finalized |
+| Vendor agreement completed | Template finalized |
+| SLA completed | Performance requirements documented |
+
+---
+
+## T6 — Vendor Management
+
+| Criterion | Pass Condition |
+|-----------|----------------|
+| Vendor onboarding process completed | Process documented |
+| Vendor scorecard completed | Evaluation criteria established |
+| Vendor risk tiering completed | Risk levels documented |
+
+---
+
+## T7 — KPI Dashboard
+
+| Criterion | Pass Condition |
+|-----------|----------------|
+| KPI Dashboard completed | Dashboard implemented |
+| Performance metrics established | KPIs monitored and reviewed |
+| Review cadence established | Monthly, quarterly, and annual reviews documented |
+
+---
+
+## T8 — Continuous Improvement
+
+| Criterion | Pass Condition |
+|-----------|----------------|
+| Operations runbooks completed | Runbooks documented |
+| Escalation paths documented | Escalation process established |
+| Continuous improvement process completed | Review process documented |
+
+---
+
+# 4. Gate Decisions
 
 | Gate | Condition | Decision |
-|---|---|---|
-| **Pass** | All criteria met; zero S1/S2 open | Release / Approve |
-| **Conditional Pass** | S3/S4 open; documented and tracked | Release with logged exceptions |
-| **Fail — Rework** | S1 or S2 open; criteria not met | Return to development |
-| **Fail — Reject** | Fundamental requirement not met | Escalate to COO |
+|------|-----------|----------|
+| **Pass** | All acceptance criteria satisfied | Approve and release |
+| **Conditional Pass** | Minor issues documented with approved corrective actions | Release with monitoring |
+| **Fail – Rework** | Acceptance criteria not satisfied | Return for revision |
+| **Fail – Reject** | Critical requirements not met | Escalate to Sprint Lead |
 
 ---
 
-## 5. Variable Inspection Scheme
-
-Per ISO 9001 and VMS QA standards, inspection intensity may be 
-**relaxed** under the following conditions:
-
-| Condition | Allowed Relaxation |
-|---|---|
-| ≥ 6 consecutive sprints with zero S1/S2 escapes | Reduce final inspection depth by 20% |
-| Vendor maintains ≥ 95 scorecard score for 3 months | Move to spot-check receiving inspection |
-| Test coverage ≥ 90% sustained for 2 sprints | Reduce peer review from 2 to 1 reviewer |
-| Automated test suite covers acceptance criteria 100% | Waive manual QA step for that feature |
-
-**Relaxation must be:**
-- Approved by Sprint Lead and COO
-- Documented with rationale
-- Reversed immediately if defect rate rises above 2%
-
----
-
-## 6. Document Control
-
-| Field | Value |
-|---|---|
-| Version | 1.0 |
-| Owner | COO / Sprint Lead |
-| Review Cycle | Per Sprint |
-| Location | `T1_Quality_Assurance/acceptance_criteria.md` |
