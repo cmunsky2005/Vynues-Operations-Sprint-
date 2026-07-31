@@ -1,197 +1,207 @@
+# QA Workflow
 
-# QA Workflow — Vynues
-
-## Overview
-
-Seven-phase workflow from story creation through production
-monitoring. Every phase maps to a test artifact layer, a UX
-heuristic checkpoint, a severity gate, and a named owner.
-
-```
-PLAN ──► DEVELOP ──► TEST ──► TRIAGE ──► RELEASE ──► MONITOR ──► IMPROVE
-```
+**Sprint:** Operations Sprint — Quality Assurance, Supply Chains & Procurement  
+**Owner:** QA Lead / Operations Sprint Team  
+**Standards:** ISO 9001:2015 • Lean/Six Sigma • Nielsen's 10 Usability Heuristics
 
 ---
 
-## Phase 1 — PLAN: Acceptance Criteria & Test Skeleton
+# Purpose
 
-**Trigger:** Product Owner creates or refines a user story.
+The QA Workflow establishes a standardized process for planning, testing, reviewing, approving, and continuously improving Vynues software features and operational deliverables.
 
-**Outputs:**
-- Acceptance criteria written in Given/When/Then format
-- Test file skeleton committed to `tests/e2e/flows/`
-- Severity floor pre-assigned to story
+The workflow supports the QA Standards (T1), Acceptance Criteria, Defect Severity Taxonomy, Defect Management Process, KPI Dashboard (T7), and Continuous Improvement Process (T8).
 
-**Gate — story is NOT sprint-ready until:**
-- [] Acceptance criteria written (Given/When/Then)
-- [ ] Test skeleton committed to `tests/`
-- [ ] Severity floor assigned (S1/S2/S3/S4)
-- [ ] UX heuristics at risk identified (H1–H14)
+The workflow maps quality activities to:
 
-**Owner:** Product Owner + QA Lead
+- Test artifacts in the `tests/` directory
+- UX heuristic reviews
+- Defect management
+- Acceptance criteria
+- Release and vendor/client delivery milestones
 
-**Acceptance Criteria Template:**
-```
-GIVEN  [system / user precondition]
-WHEN   [action taken]
-THEN   [observable, measurable outcome]
-AND    [additional assertions]
+---
 
-Severity floor:        S1 / S2 / S3 / S4
-UX heuristic(s):       H#
-Test artifact(s):      tests/path/to/file
+# QA Workflow
+
+Plan
+   ↓
+Develop
+   ↓
+Test
+   ↓
+Review Defects
+   ↓
+Approve
+   ↓
+Monitor
+   ↓
+Improve
 ```
 
 ---
 
-## Phase 2 — DEVELOP: Shift-Left Testing
+# Phase 1 – Plan
 
-**Trigger:** Developer picks up sprint-ready story.
+### Purpose
 
-**Outputs:**
-- Unit tests in `tests/unit/<module>/`
-- Integration test stubs in `tests/integration/<boundary>/`
+Define quality requirements before development or operational work begins.
 
-**Developer QA Checklist (required before PR open):**
-- [ ] Unit tests written and passing locally
-- [ ] Integration stubs committed
-- [ ] Coverage delta ≥ 80% on net-new code
-- [ ] H5 (Error Prevention) self-review complete
-- [ ] H9 (Error Recovery) self-review complete
-- [ ] No secrets or PII in test fixtures
-- [ ] Acceptance criteria referenced in PR description
+### Activities
 
-**Owner:** Software Engineer (author)
+- Define Acceptance Criteria.
+- Identify required test artifacts.
+- Identify applicable UX heuristics.
+- Review quality requirements.
+- Assign preliminary defect severity expectations.
 
----
+### Outputs
 
-## Phase 3 — TEST: Multi-Layer Execution
-
-### 3a — Automated CI Pipeline (every PR)
-
-| Layer | Artifact | Pass Criteria |
-|---|---|---|
-| Unit | `tests/unit/` | 0 failures; ≥80% net-new coverage |
-| Integration | `tests/integration/` | 0 failures on critical paths |
-| Contract | `tests/contracts/*.pact` | No breaking API changes |
-
-**Gate:** All three layers must pass before merge to `develop`.
-
-### 3b — End-to-End Flows (merge to `develop`)
-
-| Flow | Artifact | Heuristics Validated |
-|---|---|---|
-| Event creation | `tests/e2e/flows/event_creation_flow.spec` | H1, H2, H7 |
-| Vendor booking | `tests/e2e/flows/vendor_booking_flow.spec` | H1, H6, H10 |
-| Payment checkout | `tests/e2e/flows/payment_checkout_flow.spec` | H5, H9, H8 |
-| Vendor onboarding | `tests/e2e/flows/vendor_onboarding_flow.spec` | H6, H4, H5 |
-
-**E2E Pass Criteria:**
-- All happy-path scenarios pass
-- All error-path scenarios show correct user-facing messages
-- No broken navigation or dead-end screens
-- Page transitions ≤ 2 s; search results ≤ 5 s
-
-### 3c — Performance Testing (release candidate)
-
-| Test | Artifact | Threshold |
-|---|---|---|
-| Venue search load | `tests/performance/venue_search_load.k6` | p95 ≤ 3 s @ 200 concurrent users |
-| Booking engine stress | `tests/performance/booking_engine_stress.k6` | 0 errors @ 100 concurrent bookings |
-| API throughput | `tests/performance/api_throughput.k6` | ≥ 500 req/s for 5 min sustained |
-
-### 3d — Security Scanning (release candidate)
-
-| Check | Artifact | Standard |
-|---|---|---|
-| Auth & session | `tests/security/auth_penetration/` | OWASP Top 10; no privilege escalation |
-| Dependencies | `tests/security/dependency_scan/` | 0 Critical CVEs in production deps |
-| Data exposure | `tests/security/` | No PII in API responses or logs |
-
-### 3e — UX Heuristic Audit (every sprint + release candidate)
-
-See `ux_heuristics.md` for full H1–H14 audit framework.
-
-**Sprint cadence:** Lightweight spot-check, QA + UX, ≤ 2 hours.
-**Release cadence:** Full audit against all 14 heuristics.
-**Accessibility:** WCAG 2.1 AA audit every release candidate.
+- Acceptance Criteria
+- QA Checklist
+- Test Plan
 
 ---
 
-## Phase 4 — TRIAGE: Defect Severity Routing
+# Phase 2 – Develop
 
-**Routing is mechanical — severity drives action, no judgment calls.**
+### Purpose
 
-| Severity | Action | SLA |
-|---|---|---|
-| S1— Critical | Halt release. Page on-call. War room. | Fix within 4 hours |
-| S2 — High | Block current story. Fix within sprint. | Fix within 24 hours |
-| S3 — Medium | Backlog with priority tag. | Fix within 2 sprints |
-| S4 — Low | Backlog. | Fix at discretion |
+Develop software features or operational processes according to established quality standards.
 
-**Required for every defect before fix is merged:**
-- Regression test committed to `tests/regression/DEF-[NNNN]_<desc>.spec`
+### Activities
 
-**Defect Record Fields:**
-```
-ID:               DEF-[NNNN]
-Title:            [component] — [brief description]
-Severity:         S0 / S1 / S2 / S3
-Heuristic(s):     H# (if UX-related)
-Affected flow:    tests/e2e/flows/<name>
-Steps to repro:   [numbered]
-Expected:         [from acceptance criteria]
-Actual:           [observed]
-Evidence:         [screenshot / log / trace link]
-Assigned to:      [engineer]
-SLA deadline:     [auto-calculated]
-Regression test:  tests/regression/DEF-[NNNN]_<desc>.spec
-Status:           Open / In Fix / In Verification / Closed
-```
+- Complete development or process documentation.
+- Prepare required test artifacts.
+- Verify documentation is complete.
+
+### Outputs
+
+- Completed feature or operational process
+- Supporting documentation
 
 ---
 
-## Phase 5 — RELEASE: QA Sign-Off Gate
+# Phase 3 – Test
 
-**No deployment proceeds without QA Lead sign-off.**
+### Purpose
 
-See `qa_checklist.md` — Release Gate Checklist.
+Verify that all quality requirements have been satisfied.
 
-**Owner:** QA Lead
-**Sign-off recorded in:** Release ticket + deployment log
+Testing activities should follow the QA Checklist and utilize the appropriate test artifacts located within the `tests/` directory.
+
+### Test Activities
+
+- Unit Testing
+- Integration Testing
+- End-to-End Testing
+- API Testing
+- Performance Testing
+- UX Heuristic Review
+
+### Outputs
+
+- Test Results
+- Defect Reports
+
+---
+
+# Phase 4 – Defect Review
+
+### Purpose
+
+Document, classify, and resolve identified defects.
+
+### Activities
+
+- Record defects.
+- Assign severity using the Defect Severity Taxonomy.
+- Assign ownership.
+- Complete corrective actions.
+- Verify corrective actions before closure.
+
+### Outputs
+
+- Updated Defect Log
+- Corrective Actions
+- Verified Defect Resolution
 
 ---
 
-## Phase 6 — MONITOR: Production Observability
+# Phase 5 – Approval
 
-| Signal | Tool Slot | Threshold / Alert |
-|---|---|---|
-| Error rate | APM (Datadog / Sentry) | > 1% 5xx errors → page on-call |
-| Latency (p95) | APM | > 3 s venue search → alert |
-| Booking success rate | Custom metric | < 98% → alert QA Lead |
-| UX drop-off rate | Analytics | > 15% drop-off at checkout → UX review |
+### Purpose
 
-**Defect creation rule:** Any production alert that persists > 15 min
-becomes a defect record (Phase 4 triage) with severity assigned.
+Verify that deliverables satisfy all quality requirements before release or vendor/client delivery.
+
+### Approval Requirements
+
+- Acceptance Criteria completed.
+- QA Checklist completed.
+- Critical defects resolved.
+- Required documentation completed.
+- Required approvals obtained.
+
+### Outputs
+
+- QA Approval
+- Release or Delivery Approval
+
+---
+
+# Phase 6 – Monitor
+
+### Purpose
+
+Monitor operational performance following implementation.
+
+### Monitor
+
+- Operational performance
+- Vendor performance
+- Supply chain performance
+- KPI Dashboard
+- User and stakeholder feedback
+
+### Outputs
+
+- Performance Reports
+- Improvement Opportunities
 
 ---
 
-## Phase 7 — IMPROVE: Continuous Improvement
+# Phase 7 – Improve
 
-| Activity | Frequency | Owner |
-|---|---|---|
-| Sprint retrospective — QA items | Every sprint | QA Lead + Team |
-| Defect trend review | Monthly | QA Lead |
-| KPI baseline review | Monthly | QA Lead + COO |
-| Full QA document review | Quarterly | QA Lead |
-| Heuristic audit + UX review | Quarterly | UX Lead |
+### Purpose
 
-**Input to improvement:** Defect trends, KPI deltas,
-retrospective actions, production incident post-mortems.
+Continuously improve quality across Vynues operations.
+
+### Activities
+
+- Review KPI trends.
+- Analyze recurring defects.
+- Improve operational processes.
+- Update QA documentation.
+- Improve procurement and vendor management processes.
+- Update Continuous Improvement documentation (T8).
+
+### Outputs
+
+- Process Improvements
+- Updated Documentation
+- Continuous Improvement Actions
 
 ---
-*Sprint: Operations Sprint — T2*
-*Owner: QA Lead*
-*Last updated: [DATE]*
-```
+
+# Related Documents
+
+- QA Standards (T1)
+- Acceptance Criteria
+- Defect Severity Taxonomy
+- Defect Management Process
+- QA Checklist
+- KPI Dashboard (T7)
+- Continuous Improvement Process (T8)
+
+---
 
