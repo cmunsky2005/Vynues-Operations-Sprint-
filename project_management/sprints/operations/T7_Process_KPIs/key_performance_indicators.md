@@ -2,9 +2,7 @@
 
 **Sprint:** Operations Sprint — Process KPIs (T7)  
 **Version:** 1.0  
-**Owner:** Operations Team  
-**Approver:** Chief Operating Officer (COO)  
-**Standards:** ISO 9001:2015 • SCOR Model • ISO 28000 • Procurement Best Practices
+**Owner:** Operations Team   
 
 ---
 
