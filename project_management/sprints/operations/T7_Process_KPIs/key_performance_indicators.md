@@ -1,118 +1,117 @@
-# Key Performance Indicators (KPIs)
+# KPI Dashboard
 
 **Sprint:** Operations Sprint — Process KPIs (T7)
 **Version:** 1.0
 **Owner:** Operations Team
+**Approver:** Chief Operating Officer (COO)
+**Standards:** ISO 9001:2015 • SCOR Model • ISO 28000 • Procurement Best Practices
 
 ## Purpose
 
-This document identifies the Key Performance Indicators (KPIs) used to monitor the effectiveness of Vynues' operational processes. These indicators support the evaluation of Quality Assurance, Procurement, Supply Chain, and Vendor Management activities and provide information for continual improvement.
+The KPI Dashboard provides a centralized view of operational performance across Quality Assurance, Procurement, Supply Chain, and Vendor Management. The dashboard supports the monitoring of operational performance, identification of performance trends, and continual improvement.
 
-## Objectives
+## Dashboard Overview
 
-The objectives of these KPIs are to:
+This dashboard reflects the full consolidated KPI list (T7 Key Performance Indicators). Earlier versions of this dashboard tracked only 11 of the defined metrics; it now covers all categories so no team's KPIs are excluded from the shared view.
+
+**Quality Assurance**
+
+| KPI | Baseline | Current | Status |
+|---|---|---|---|
+| Defect Resolution Time | To Be Established | To Be Measured | — |
+| Documentation Accuracy | To Be Established | To Be Measured | — |
+| QA Review Completion | To Be Established | To Be Measured | — |
+| First Pass Acceptance Rate | To Be Established | To Be Measured | — |
+| Quality Acceptance Rate | To Be Established | To Be Measured | — |
+
+**Procurement**
+
+| KPI | Baseline | Current | Status |
+|---|---|---|---|
+| Procurement Cycle Time | To Be Established | To Be Measured | — |
+| Contract Approval Rate | To Be Established | To Be Measured | — |
+| Contract Approval Time | To Be Established | To Be Measured | — |
+| Purchase Order Accuracy | To Be Established | To Be Measured | — |
+| Procurement Rework | To Be Established | To Be Measured | — |
+
+**Vendor Management**
+
+| KPI | Baseline | Current | Status |
+|---|---|---|---|
+| Vendor Onboarding Cycle Time | To Be Established | To Be Measured | — |
+| Vendor Documentation Completion | To Be Established | To Be Measured | — |
+| Vendor Performance | To Be Established | To Be Measured | — |
+| SLA Compliance | To Be Established | To Be Measured | — |
+| Vendor Risk Classification | To Be Established | To Be Measured | — |
+| Vendor Compliance Rate | To Be Established | To Be Measured | — |
+| Response Time Compliance | To Be Established | To Be Measured | — |
+| Completed Deliverables Rate | To Be Established | To Be Measured | — |
+| Customer Complaints (per project) | To Be Established | To Be Measured | — |
+
+**Supply Chain**
+
+| KPI | Baseline | Current | Status |
+|---|---|---|---|
+| On-Time Delivery | To Be Established | To Be Measured | — |
+| Process Cycle Time | To Be Established | To Be Measured | — |
+| Workflow Completion | To Be Established | To Be Measured | — |
+| Supply Chain Bottlenecks | To Be Established | To Be Measured | — |
+| On-Time Vendor Arrival | To Be Established | To Be Measured | — |
+| Venue Readiness Rate | To Be Established | To Be Measured | — |
+| Event On-Time Start Rate | To Be Established | To Be Measured | — |
+| Vendor No-Show Rate | To Be Established | To Be Measured | — |
+| Incident Rate | To Be Established | To Be Measured | — |
+| Complaint Resolution Time | To Be Established | To Be Measured | — |
+
+**Customer Experience**
+
+| KPI | Baseline | Current | Status |
+|---|---|---|---|
+| Client / Customer Satisfaction Score | To Be Established | To Be Measured | — |
+
+**Continuous Improvement**
+
+| KPI | Baseline | Current | Status |
+|---|---|---|---|
+| Corrective Action Completion | To Be Established | To Be Measured | — |
+| Process Improvement Progress | To Be Established | To Be Measured | — |
+| Operational Performance Trends | To Be Established | To Be Measured | — |
+
+## Dashboard Review
+
+Dashboard information should be reviewed to:
 
 - Monitor operational performance.
-- Evaluate process effectiveness.
-- Identify opportunities for improvement.
-- Support operational decision making.
-- Monitor procurement and vendor performance.
+- Compare current performance with baseline measurements.
+- Identify performance trends.
+- Identify operational issues requiring corrective action.
 - Support continual improvement.
 
-> **Note on consolidation:** This list is the single authoritative KPI set for Vynues Operations. Earlier task-level documents (T3 Supply Chain, T4 Bottleneck Analysis, T5 SLA Template) independently introduced KPI names that overlapped with, but did not exactly match, this list. Those metrics have been folded in below rather than left as separate, conflicting KPI sets. Any future task document should reference this list by name rather than defining new metric names.
+## Dashboard Updates
 
-## Quality Assurance KPIs
+The KPI Dashboard should be updated using information collected from:
 
-| KPI | Source |
-|---|---|
-| Defect Resolution Time | T1/T7 |
-| Documentation Accuracy | T1/T7 |
-| QA Review Completion | T1/T7 |
-| First Pass Acceptance Rate | T1/T7 |
-| Quality Acceptance Rate | Consolidated from T5 SLA |
+- Baseline Metrics
+- Quality Assurance Reports
+- Procurement Records
+- Vendor Performance Reviews
+- Vendor Scorecards
+- Supply Chain Performance Reports
+- Corrective Action Reports
 
-## Procurement KPIs
+## Continuous Improvement
 
-| KPI | Source |
-|---|---|
-| Procurement Cycle Time | T1/T7 |
-| Contract Approval Rate | T1/T7 |
-| Contract Approval Time | Consolidated from T4 |
-| Purchase Order Accuracy | T1/T7 |
-| Procurement Rework | T1/T7 |
+Dashboard results should be used to:
 
-## Vendor Management KPIs
-
-| KPI | Source |
-|---|---|
-| Vendor Onboarding Cycle Time | T1/T7 |
-| Vendor Documentation Completion | T1/T7 |
-| Vendor Performance | T1/T7 |
-| Service Level Agreement (SLA) Compliance | T1/T7 |
-| Vendor Risk Classification | T1/T7 — now populated via risk tiers defined in T6 |
-| Vendor Compliance Rate | Consolidated from T4 |
-| Response Time Compliance | Consolidated from T5 SLA |
-| Completed Deliverables Rate | Consolidated from T5 SLA |
-| Customer Complaints (per project) | Consolidated from T5 SLA |
-
-## Supply Chain KPIs
-
-| KPI | Source |
-|---|---|
-| On-Time Delivery | T1/T7 |
-| Process Cycle Time | T1/T7 |
-| Workflow Completion | T1/T7 |
-| Supply Chain Bottlenecks | T1/T7 |
-| Vendor Onboarding Time | Consolidated from T3 (duplicate of Vendor Onboarding Cycle Time — retired, see note below) |
-| On-Time Vendor Arrival | Consolidated from T3 |
-| Venue Readiness Rate | Consolidated from T3 |
-| Event On-Time Start Rate | Consolidated from T3 |
-| Vendor No-Show Rate | Consolidated from T3 |
-| Incident Rate | Consolidated from T3 |
-| Complaint Resolution Time | Consolidated from T3 |
-
-## Customer Experience KPIs
-
-*(New category — created to house customer-facing metrics that were previously scattered across T3 and T5 without a home.)*
-
-| KPI | Source |
-|---|---|
-| Client / Customer Satisfaction Score | Consolidated from T3 and T5 |
-
-## Continuous Improvement KPIs
-
-| KPI | Source |
-|---|---|
-| Corrective Action Completion | T1/T7 |
-| Process Improvement Progress | T1/T7 |
-| Operational Performance Trends | T1/T7 |
-
-## Retired / Duplicate Metrics
-
-The following metric names appeared in earlier task documents but duplicated an existing KPI under a different name. They have been retired in favor of the single listed KPI to avoid two teams reporting the same thing under different labels:
-
-| Retired Name (source) | Use Instead |
-|---|---|
-| Vendor Onboarding Time (T3) | Vendor Onboarding Cycle Time |
-| Vendor Performance Score (T3) | Vendor Performance |
-| Vendor SLA Compliance (T3) | Service Level Agreement (SLA) Compliance |
-| Internal Stakeholder Satisfaction (T4) | Client / Customer Satisfaction Score |
-
-## KPI Monitoring
-
-Operational performance should be monitored using the established KPIs.
-
-Performance information should be:
-
-- Collected from operational processes.
-- Compared with baseline measurements.
-- Reviewed to identify performance trends.
-- Used to support continual improvement activities.
+- Evaluate operational performance.
+- Identify improvement opportunities.
+- Support operational decision making.
+- Monitor progress toward continual improvement.
 
 ## Related Documents
 
 - Baseline Metrics (T7)
-- KPI Dashboard (T7)
+- Key Performance Indicators (T7)
 - QA Standards (T1)
 - QA Workflow (T2)
 - Supply Chain Map (T3)
