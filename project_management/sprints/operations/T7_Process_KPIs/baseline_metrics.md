@@ -1,6 +1,6 @@
 # Baseline Data Intake Tracker
 
-This tracker exists to collect the real operational data needed to populate the T7 Baseline Metrics and KPI Dashboard. Every "To Be Established" cell in those two documents should be filled from this tracker once the source data is pulled — not estimated or assumed.
+This tracker exists to collect the real operational data needed to populate the T7 Baseline Metrics and KPI Dashboard. Every "To Be Established" cell in those two documents should be filled from this tracker once the source data is pulled 
 
 **No values in this document are populated yet.** This is intentionally a blank intake form, not a filled baseline. Baseline numbers must come from actual records; a placeholder guess here would defeat the purpose of a baseline.
 
@@ -22,7 +22,6 @@ This tracker exists to collect the real operational data needed to populate the 
 | | | | | | |
 | | | | | | |
 
-*(Add one row per KPI as data collection begins. Once a row has a calculated Baseline Value, transfer it into the corresponding cell in Baseline Metrics.md and KPI Dashboard.md, replacing "To Be Established.")*
 
 ## Recommended Baseline Window
 
